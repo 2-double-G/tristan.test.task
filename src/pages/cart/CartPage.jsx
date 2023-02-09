@@ -4,7 +4,7 @@ import { Header } from '../../components/Header/Header';
 import { StoreContext } from '../../components/Store/StoreContext';
 import { Sidebar } from '../../components/Sidebar/Sidebar';
 
-export const Home = () => {
+export const CartPage = () => {
   const {
     dispatch,
     state: { showMenu }
