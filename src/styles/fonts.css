@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('../assets/fonts/CooperBTLight.woff') format('woff2'),
+    url('../assets/fonts/CooperBTLight.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Neue Haas Unica Regular Pro';
+  src: url('../assets/fonts/NeueHaasUnicaRegular.woff') format('woff2'),
+    url('../assets/fonts/NeueHaasUnicaRegular.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Neue Haas Unica Light Pro';
+  src: url('../assets/fonts/NeueHaasUnicaLight.woff') format('woff2'),
+    url('../assets/fonts/NeueHaasUnicaLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Neue Haas Unica Ultra Light Pro';
+  src: url('../assets/fonts/NeueHaasUnicaUltraLight.woff') format('woff2'),
+    url('../assets/fonts/NeueHaasUnicaUltraLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Neue Haas Unica Heavy Pro';
+  src: url('../assets/fonts/NeueHaasUnicaHeavy.woff') format('woff2'),
+    url('../assets/fonts/NeueHaasUnicaHeavy.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Neue Haas Unica Bold Pro';
+  src: url('../assets/fonts/NeueHaasUnicaBold.woff') format('woff2'),
+    url('../assets/fonts/NeueHaasUnicaBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Neue Haas Unica Black Pro';
+  src: url('../assets/fonts/NeueHaasUnicaBlack.woff') format('woff2'),
+    url('../assets/fonts/NeueHaasUnicaBlack.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Neue Haas Unica Medium Pro';
+  src: url('../assets/fonts/NeueHaasUnicaMedium.woff') format('woff2'),
+    url('../assets/fonts/NeueHaasUnicaMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Neue Haas Unica Thin Pro';
+  src: url('../assets/fonts/NeueHaasUnicaThin.woff') format('woff2'),
+    url('../assets/fonts/NeueHaasUnicaThin.woff') format('woff');
+}

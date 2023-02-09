@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { FontStyles } from './styles/fontStyles';
+
+import './styles/fonts.css';
+import './styles/reset.css';
+import { Store } from './components/Store/Store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Store>
+      <FontStyles />
+      <App />
+    </Store>
   </React.StrictMode>
 );
 
