@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   flags: {
     DEV_SSR: true
   }
