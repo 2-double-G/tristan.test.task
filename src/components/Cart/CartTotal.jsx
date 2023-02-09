@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import React from 'react';
 import { StyledCartTotal, StyledTotal, AUD } from './Cart.styles';
 
 /**

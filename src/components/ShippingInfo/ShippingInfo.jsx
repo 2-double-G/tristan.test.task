@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import React from 'react';
 import { Modal } from '../Modal/Modal';
 import { ModalFooter, ModalHeader, StyledContent } from './ShippingInfo.styles';
 

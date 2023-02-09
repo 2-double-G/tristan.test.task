@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { memo, useEffect, useState } from 'react';
+import React, { memo, useEffect, useState } from 'react';
 import { Backdrop, StyledSideBar } from './Drawer.styles';
 
 /**

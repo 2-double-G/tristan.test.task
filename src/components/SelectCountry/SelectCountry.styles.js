@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.ul`
+export const Container = styled.div`
   position: relative;
   border-bottom: 1px solid #000000;
   margin-bottom: 30px;

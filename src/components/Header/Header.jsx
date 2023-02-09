@@ -1,3 +1,4 @@
+import React from 'react';
 import { MenuButton } from '../MenuButton/MenuButton';
 import { StyledHeader } from './Header.styles';
 

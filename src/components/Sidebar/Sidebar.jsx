@@ -1,5 +1,4 @@
-import { useContext } from 'react';
-import { useNavigate } from 'react-router';
+import React, { useContext } from 'react';
 
 import { Ads } from '../Ads/Ads';
 import { Cart } from '../Cart/Cart';
@@ -8,7 +7,7 @@ import { ArrowButton } from '../ArrowButton/ArrowButton';
 
 import { StoreContext } from '../Store/StoreContext';
 
-import catAds from '../../assets/images/cat-street-hero-olive_2000.webp';
+import catAds from '../../assets/images/cat-street-hero-olive_2000.png';
 
 import { header, noItems } from './utils/constants';
 import { useCart } from '../../utils/hooks/useCart';
@@ -22,14 +21,14 @@ import {
   SidebarCloseButton,
   CheckoutButtonWrapper
 } from './Sidebar.styles';
-import { ads } from '../../pages/checkout/utils/constants';
+import { ads } from '../CheckoutPage/utils/constants';
+import { navigate } from 'gatsby';
 
 export const Sidebar = () => {
   const {
     dispatch,
     state: { inputCode, selectedCodes }
   } = useContext(StoreContext);
-  const navigate = useNavigate();
 
   const {
     total,

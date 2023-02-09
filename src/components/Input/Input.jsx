@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 import {
   InputContainer,
   InputField,
@@ -6,7 +7,6 @@ import {
   TextareaField,
   ClearButton
 } from './Input.styles';
-import { useState } from 'react';
 
 /**
  * This is a component that displays a input control

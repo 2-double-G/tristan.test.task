@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { memo } from 'react';
+import React, { memo } from 'react';
 import { XButton } from '../RemoveButton/XButton';
 import {
   CartItemCountButton,

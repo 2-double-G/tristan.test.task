@@ -1,26 +1,29 @@
-import { useContext, useState } from 'react';
+import React, { useContext, useState } from 'react';
 
-import { Ads } from '../../components/Ads/Ads';
-import { Cart } from '../../components/Cart/Cart';
-import { Input } from '../../components/Input/Input';
-import { Radio } from '../../components/Radio/Radio';
-import { CartTotal } from '../../components/Cart/CartTotal';
-import { Payments } from '../../components/Payments/Payments';
-import { ArrowButton } from '../../components/ArrowButton/ArrowButton';
-import { SidebarFooter } from '../../components/Sidebar/Sidebar.styles';
-import { ShippingInfo } from '../../components/ShippingInfo/ShippingInfo';
-import { SelectCountry } from '../../components/SelectCountry/SelectCountry';
-import { SelectDialCode } from '../../components/SelectDialCode/SelectDialCode';
+import { Ads } from '../components/Ads/Ads';
+import { Cart } from '../components/Cart/Cart';
+import { Input } from '../components/Input/Input';
+import { Radio } from '../components/Radio/Radio';
+import { CartTotal } from '../components/Cart/CartTotal';
+import { Payments } from '../components/Payments/Payments';
+import { ArrowButton } from '../components/ArrowButton/ArrowButton';
+import { SidebarFooter } from '../components/Sidebar/Sidebar.styles';
+import { ShippingInfo } from '../components/ShippingInfo/ShippingInfo';
+import { SelectCountry } from '../components/SelectCountry/SelectCountry';
+import { SelectDialCode } from '../components/SelectDialCode/SelectDialCode';
 
-import { StoreContext } from '../../components/Store/StoreContext';
+import { StoreContext } from '../components/Store/StoreContext';
 
-import footerLogo1 from '../../assets/images/footer-logo1.svg';
-import footerLogo2 from '../../assets/images/footer-logo2.svg';
-import catAds from '../../assets/images/cat-street-hero-olive_2000.webp';
-import { ReactComponent as LogoSrc } from '../../assets/images/logo.svg';
+import footerLogo1 from '../assets/images/footer-logo1.svg';
+import footerLogo2 from '../assets/images/footer-logo2.svg';
+import catAds from '../assets/images/cat-street-hero-olive_2000.png';
+import LogoSrc from '../assets/images/logo.svg';
 
-import { useCart } from '../../utils/hooks/useCart';
-import { paymentOptions, radioOptions } from './utils/constants';
+import { useCart } from '../utils/hooks/useCart';
+import {
+  paymentOptions,
+  radioOptions
+} from '../components/CheckoutPage/utils/constants';
 
 import {
   Col,
@@ -34,9 +37,9 @@ import {
   ShippingButtonWrpr,
   StyledDescription,
   FooterIconsContainer
-} from './Checkout.styles';
+} from '../components/CheckoutPage/CheckoutPage.styles';
 
-export const Checkout = () => {
+const CheckoutPage = () => {
   const {
     state: { inputCode, selectedCodes }
   } = useContext(StoreContext);
@@ -88,7 +91,7 @@ export const Checkout = () => {
   return (
     <StyledCheckout>
       <header>
-        <LogoSrc width={181} height={52} />
+        <img src={LogoSrc} />
         <h1>Checkout</h1>
         <span />
       </header>
@@ -233,3 +236,5 @@ export const Checkout = () => {
     </StyledCheckout>
   );
 };
+
+export default CheckoutPage;

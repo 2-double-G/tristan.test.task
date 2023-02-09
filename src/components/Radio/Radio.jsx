@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import React from 'react';
 import { Container, InputRadio, OptionContainer } from './Radio.styles';
 
 export const Radio = ({ options, name, selectedValue, onChange }) => {

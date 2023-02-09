@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { memo } from 'react';
+import React, { memo } from 'react';
 import { CartItem } from './CartItem';
 import { PromoCode } from '../PromoCode/PromoCode';
 import { StyledCart, StyledCartContainer } from './Cart.styles';

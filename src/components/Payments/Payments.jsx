@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import React from 'react';
 import { StyledPayments } from './Payment.styles';
 
 export const Payments = ({ options }) => (

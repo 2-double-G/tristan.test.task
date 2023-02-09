@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ROUTES } from './utils/routes';
-import { Layout } from './components/Layout/Layout';
+import { ROUTES } from '../utils/routes';
+import { Layout } from './Layout/Layout';
 
 function App() {
   return (

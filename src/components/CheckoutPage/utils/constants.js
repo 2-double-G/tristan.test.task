@@ -1,7 +1,8 @@
+import React from 'react';
 import payPal from '../../../assets/images/paypal.svg';
 import card from '../../../assets/images/card.svg';
 
-import { StyledRadioOption } from '../Checkout.styles';
+import { StyledRadioOption } from '../CheckoutPage.styles';
 
 export const radioOptions = [
   {

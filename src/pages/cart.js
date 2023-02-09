@@ -1,10 +1,10 @@
-import { useContext } from 'react';
-import { Drawer } from '../../components/Drawer/Drawer';
-import { Header } from '../../components/Header/Header';
-import { StoreContext } from '../../components/Store/StoreContext';
-import { Sidebar } from '../../components/Sidebar/Sidebar';
+import React, { useContext } from 'react';
+import { Drawer } from '../components/Drawer/Drawer';
+import { Header } from '../components/Header/Header';
+import { StoreContext } from '../components/Store/StoreContext';
+import { Sidebar } from '../components/Sidebar/Sidebar';
 
-export const CartPage = () => {
+const Named = () => {
   const {
     dispatch,
     state: { showMenu }
@@ -23,3 +23,5 @@ export const CartPage = () => {
     </div>
   );
 };
+
+export default Named;

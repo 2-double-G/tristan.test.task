@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import React from 'react';
 import { StyledButton } from './ArrowButton.styles';
 
 export const ArrowButton = ({ children, ...props }) => (

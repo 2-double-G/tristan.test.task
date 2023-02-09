@@ -1,4 +1,4 @@
-import cremeCover from '../assets/images/cat-street-creme_2000.webp';
+import cremeCover from '../assets/images/cat-street-creme_2000.png';
 import oliveCover from '../assets/images/blanket.png';
 
 export const cart = [

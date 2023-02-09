@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import codes from 'country-calling-code';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {
   Container,
   OptionsContainer,
@@ -8,7 +8,7 @@ import {
   Option
 } from './SelectDialCode.styles';
 import { getCountryFlag } from './utils/getCountryFlag';
-import { ReactComponent as Arrow } from '../../assets/images/arrow.svg';
+import Arrow from '../../assets/images/arrow.svg';
 
 export const SelectDialCode = ({ name, label }) => {
   const [selectedOption, setSelectedOption] = useState(codes[0]);
@@ -35,7 +35,7 @@ export const SelectDialCode = ({ name, label }) => {
           loading="lazy"
         />
         <span>+{selectedOption.countryCodes[0]}</span>
-        <Arrow width={12} />
+        <img src={Arrow} />
       </SelectButton>
       <OptionsContainer showOptions={showOptions}>
         {codes.map((option) => (
@@ -54,6 +54,6 @@ export const SelectDialCode = ({ name, label }) => {
 };
 
 SelectDialCode.propTypes = {
-  name: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired
+  name: PropTypes.string,
+  label: PropTypes.string
 };

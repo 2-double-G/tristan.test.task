@@ -44,7 +44,6 @@ export const TextareaField = styled.textarea`
   color: #424141;
   resize: none;
   font-family: 'Neue Haas Unica Regular Pro' !important;
-  /* max */
 
   &:focus {
     background: white;
@@ -54,7 +53,7 @@ export const TextareaField = styled.textarea`
 export const Placeholder = styled.label`
   position: absolute;
   pointer-events: none;
-  left: ${({ hasElemBefore }) => `${hasElemBefore ? 140 : 6}px`};
+  left: ${({ hasElemBefore }) => `${hasElemBefore ? 145 : 6}px`};
   margin-top: 6px;
   transition: 0.2s ease all;
 

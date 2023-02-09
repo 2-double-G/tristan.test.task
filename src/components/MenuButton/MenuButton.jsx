@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { StoreContext } from '../Store/StoreContext';
 import { StyledMenuButton } from './MenuButton.styles';
 

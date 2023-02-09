@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import codes from 'country-calling-code';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {
   Container,
   OptionsContainer,
@@ -8,7 +8,7 @@ import {
   Option,
   Label
 } from './SelectCountry.styles';
-import { ReactComponent as Arrow } from '../../assets/images/arrow.svg';
+import Arrow from '../../assets/images/arrow.svg';
 
 export const SelectCountry = ({ name, label }) => {
   const [selectedOption, setSelectedOption] = useState(codes[0]);
@@ -30,7 +30,7 @@ export const SelectCountry = ({ name, label }) => {
       <Label htmlFor={name}>{label}</Label>
       <SelectButton onClick={toggleOptions}>
         {selectedOption.country}
-        <Arrow width={12} />
+        <img src={Arrow} />
       </SelectButton>
       <OptionsContainer showOptions={showOptions}>
         {codes.map((option) => (
